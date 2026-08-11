@@ -1,0 +1,403 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tela {
+    display: none;
+}
+
+.tela.ativa {
+    display: block;
+}
+
+/* BASE */
+
+body {
+    background-color: #100C0A;
+    font-family: 'Manrope', sans-serif;
+    color: #FFFFFF;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* APLICAÇÃO */
+
+.app {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    height: 379px;
+    position: relative;
+}
+
+
+/* IMAGEM */
+
+.banner-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* INFORMAÇÕES SOBRE A IMAGEM */
+
+.info-hero {
+    position: absolute;
+    bottom: 20px;
+    left: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+}
+
+.info-hero span {
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.info-hero h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+/* BOTÃO */
+
+.button-horario {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.button-horario button {
+    width: 332px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    color: #100C0A;
+
+    border: none;
+    border-radius: 50px;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 20px;
+    margin-top: 50px;
+    flex-direction: column;
+    margin-bottom: 500px;
+
+
+}
+
+
+/* CARD DE HORÁRIOS */
+
+.horarios-info {
+    width: 332px;
+    height: 166px;
+
+    background-color: #1E1E1E;
+
+    border: 1px solid #87827D;
+    border-radius: 8px;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* TÍTULO */
+
+.horarios-info h3 {
+    text-transform: uppercase;
+
+    font-size: 10px;
+    font-weight: 300;
+
+    margin-bottom: 12px;
+}
+
+
+/* LISTA DE HORÁRIOS */
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* CADA LINHA */
+
+.horario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* TEXTOS */
+
+.horario span {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.horarios-info {
+    width: 332px;
+    height: 166px;
+
+    background-color: #1E1E1E;
+
+    border: 1px solid #87827D;
+    border-radius: 8px;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.telefone-info {
+    width: 332px;
+    height: 60px;
+    margin-top: 12px;
+
+    background-color: #1E1E1E;
+
+    border: 1px solid #87827D;
+    border-radius: 8px;
+
+    padding: 16px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.telefone-info h3 {
+    text-transform: uppercase;
+
+    font-size: 10px;
+    font-weight: 300;
+
+}
+
+.telefone-info span {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.adress-info {
+    width: 332px;
+    height: 60px;
+    margin-top: 12px;
+
+    background-color: #1E1E1E;
+
+    border: 1px solid #87827D;
+    border-radius: 8px;
+
+    padding: 16px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.adress-info h3 {
+    text-transform: uppercase;
+
+    font-size: 10px;
+    font-weight: 300;
+
+}
+
+.adress-info span {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.tela-barbeiros {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.btn-voltar {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+
+    border: 1px solid #87827D;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.btn-voltar img {
+    width: 24px;
+    height: 24px;
+}
+
+.header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+    padding: 20px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.header-info h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header-info span {
+    font-size: 10px;
+    font-weight: 300;
+    color: #87827D;
+}
+
+.progresso {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.etapa {
+    width: 62px;
+    height: 4px;
+
+    background-color: #87827D;
+    border-radius: 10px;
+}
+
+.etapa.ativa {
+    background-color: #E8B33E;
+}
+
+.barbeiros {
+    width: 332px;
+    margin: 30px auto 0;
+}
+
+.barbeiro {
+    width: 100%;
+    min-height: 64px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    cursor: pointer;
+}   
+
+.barbeiro h3 {
+    flex: 1;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.foto {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background-color: #87827D;
+    flex-shrink: 0;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.chevron {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    margin-top: 16px;
+    background-color: #87827D;
+    margin-bottom: 16px;
+}
+
+
+.tela-servicos {
+    width: 100%;
+    min-height: 100vh;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barbearia</title>
+
+    <!-- Fonte Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+    <!-- TELA INICIAL -->
+    <section id="tela-inicial" class="tela ativa">
+
+        <section class="hero">
+
+            <img
+                src="assets/BACKGROUND.png"
+                alt="Interior da barbearia"
+                class="banner-hero"
+            >
+
+            <div class="info-hero">
+                <span>Barbearia</span>
+                <h1>3M Barber Studio</h1>
+            </div>
+
+            <div class="button-horario">
+                <button
+                    type="button"
+                    onclick="mostrarTela('tela-barbeiros')"
+                >
+                    Agendar horário
+                </button>
+            </div>
+
+        </section>
+
+        <section class="informacoes">
+
+            <div class="horarios-info">
+
+                <h3>Horários de atendimento</h3>
+
+                <div class="horarios">
+
+                    <div class="horario">
+                        <span>seg</span>
+                        <span>10:00 - 19:00</span>
+                    </div>
+
+                    <div class="horario">
+                        <span>ter</span>
+                        <span>09:00 - 20:00</span>
+                    </div>
+
+                    <div class="horario">
+                        <span>qua</span>
+                        <span>09:00 - 20:00</span>
+                    </div>
+
+                    <div class="horario">
+                        <span>qui</span>
+                        <span>09:00 - 20:00</span>
+                    </div>
+
+                    <div class="horario">
+                        <span>sex</span>
+                        <span>09:00 - 20:00</span>
+                    </div>
+
+                    <div class="horario">
+                        <span>sab</span>
+                        <span>09:00 - 18:00</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="telefone-info">
+                <div class="tel">
+                    <h3>Telefone</h3>
+                    <span>(51) 99814-9359</span>
+                </div>
+            </div>
+
+
+            <div class="adress-info">
+                <div class="adress">
+                    <h3>Endereço</h3>
+                    <span>
+                        Bélgica, 1390 (sala 3), Centro Novo.
+                        Eldorado do Sul, RS
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <!-- TELA BARBEIROS -->
+    <section id="tela-barbeiros" class="tela">
+
+        <div class="header">
+
+            <button
+                class="btn-voltar"
+                type="button"
+                onclick="mostrarTela('tela-inicial')"
+            >
+                <img src="assets/arrow-left.svg" alt="Voltar">
+            </button>
+
+            <div class="header-info">
+                <h2>Selecione um profissional</h2>
+                <span>Passo 1 de 5</span>
+            </div>
+
+        </div>
+
+
+        <div class="progresso">
+            <div class="etapa ativa"></div>
+            <div class="etapa"></div>
+            <div class="etapa"></div>
+            <div class="etapa"></div>
+            <div class="etapa"></div>
+        </div>
+
+
+        <div class="barbeiros">
+
+            <div
+                class="barbeiro"
+                onclick="mostrarTela('tela-servicos')"
+            >
+
+                <div class="foto">
+                    <img src="assets/matheus.png" alt="Matheus">
+                </div>
+
+                <h3>Matheus</h3>
+
+                <img
+                    class="chevron"
+                    src="assets/chevron-right.svg"
+                    alt="Selecionar"
+                >
+
+            </div>
+
+            <div class="linha"></div>
+
+            <div
+                class="barbeiro"
+                onclick="mostrarTela('tela-servicos')"
+            >
+
+                <div class="foto">
+                    <img src="assets/matheus.png" alt="Matheus">
+                </div>
+
+                <h3>Matheus</h3>
+
+                <img
+                    class="chevron"
+                    src="assets/chevron-right.svg"
+                    alt="Selecionar"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TELA SERVIÇOS -->
+    <section id="tela-servicos" class="tela">
+
+        <div class="header">
+
+            <button
+                class="btn-voltar"
+                type="button"
+                onclick="mostrarTela('tela-barbeiros')"
+            >
+                <img src="assets/arrow-left.svg" alt="Voltar">
+            </button>
+
+            <div class="header-info">
+                <h2>Selecione o serviço</h2>
+                <span>Passo 2 de 5</span>
+            </div>
+
+        </div>
+
+
+        <div class="progresso">
+            <div class="etapa ativa"></div>
+            <div class="etapa ativa"></div>
+            <div class="etapa"></div>
+            <div class="etapa"></div>
+            <div class="etapa"></div>
+        </div>
+
+    </section>
+
+      <!-- TELA DATA -->
+    <section id="tela-data" class="tela">
+
+        <div class="header">
+
+            <button
+                class="btn-voltar"
+                type="button"
+                onclick="mostrarTela('tela-servicos')"
+            >
+                <img src="assets/arrow-left.svg" alt="Voltar">
+            </button>
+
+            <div class="header-info">
+                <h2>Selecione o serviço</h2>
+                <span>Passo 3 de 5</span>
+            </div>
+
+        </div>
+
+
+        <div class="progresso">
+            <div class="etapa ativa"></div>
+            <div class="etapa ativa"></div>
+            <div class="etapa ativa"></div>
+            <div class="etapa"></div>
+            <div class="etapa"></div>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
