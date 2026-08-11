@@ -230,6 +230,8 @@ body {
 .telefone-info span {
     font-size: 10px;
     font-weight: 300;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .adress {
@@ -739,6 +741,7 @@ body {
 .card-dados label {
     font-size: 10px;
     font-weight: 400;
+    color: #87827D;
 }
 
 .card-dados input {
@@ -756,6 +759,7 @@ body {
     font-size: 12px;
 
     outline: none;
+    color: #FFFFFF;
 }
 
 .card-dados input:focus {
@@ -782,14 +786,20 @@ body {
 
     border: 1px solid #87827D;
     border-radius: 8px;
+    color: #87827D;
 
     font-size: 12px;
 }
 
 .telefone-campo input {
     flex: 1;
+    color: #FFFFFF;
 }
 
+.telefone-campo input label {
+    flex: 1;
+    color: #87827D;
+}
 
 /* RESUMO */
 
@@ -811,7 +821,7 @@ body {
 
 .resumo-label {
     font-size: 10px;
-    color: #54504D;
+    color: #87827D;
 }
 
 .resumo-bloco strong {
