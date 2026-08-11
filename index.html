@@ -28,7 +28,7 @@
         <section class="hero">
 
             <img
-                src="assets/BACKGROUND.png"
+                src="BACKGROUND.png"
                 alt="Interior da barbearia"
                 class="banner-hero"
             >
@@ -125,7 +125,7 @@
                 type="button"
                 onclick="mostrarTela('tela-inicial')"
             >
-                <img src="assets/arrow-left.svg" alt="Voltar">
+                <img src="arrow-left.svg" alt="Voltar">
             </button>
 
             <div class="header-info">
@@ -147,20 +147,20 @@
 
         <div class="barbeiros">
 
-            <div
-                class="barbeiro"
-                onclick="mostrarTela('tela-servicos')"
-            >
+         <div
+    class="barbeiro"
+    onclick="selecionarBarbeiro('Matheus', '5551995098335')"
+>
 
                 <div class="foto">
-                    <img src="assets/matheus.png" alt="Matheus">
+                    <img src="barber-joao.jpg" alt="Matheus">
                 </div>
 
                 <h3>Matheus</h3>
 
                 <img
                     class="chevron"
-                    src="assets/chevron-right.svg"
+                    src="chevron-right.svg"
                     alt="Selecionar"
                 >
 
@@ -168,20 +168,20 @@
 
             <div class="linha"></div>
 
-            <div
-                class="barbeiro"
-                onclick="mostrarTela('tela-servicos')"
-            >
+           <div
+            class="barbeiro"
+            onclick="selecionarBarbeiro('Rafaela', '5551995098335')"
+        >
 
                 <div class="foto">
-                    <img src="assets/matheus.png" alt="Matheus">
+                    <img src="barber-rafa.jpg" alt="Matheus">
                 </div>
 
-                <h3>Matheus</h3>
+                <h3>Rafaela</h3>
 
                 <img
                     class="chevron"
-                    src="assets/chevron-right.svg"
+                    src="chevron-right.svg"
                     alt="Selecionar"
                 >
 
@@ -192,67 +192,414 @@
     </section>
 
 
-    <!-- TELA SERVIÇOS -->
-    <section id="tela-servicos" class="tela">
+<!-- TELA SERVIÇOS -->
+<section id="tela-servicos" class="tela">
 
-        <div class="header">
+    <div class="header">
 
-            <button
-                class="btn-voltar"
-                type="button"
-                onclick="mostrarTela('tela-barbeiros')"
-            >
-                <img src="assets/arrow-left.svg" alt="Voltar">
-            </button>
+        <button
+            class="btn-voltar"
+            type="button"
+            onclick="mostrarTela('tela-barbeiros')"
+        >
+            <img src="arrow-left.svg" alt="Voltar">
+        </button>
 
-            <div class="header-info">
-                <h2>Selecione o serviço</h2>
-                <span>Passo 2 de 5</span>
-            </div>
-
+        <div class="header-info">
+            <h2>Selecione o serviço</h2>
+            <span>Passo 2 de 5</span>
         </div>
 
+    </div>
 
-        <div class="progresso">
-            <div class="etapa ativa"></div>
-            <div class="etapa ativa"></div>
-            <div class="etapa"></div>
-            <div class="etapa"></div>
-            <div class="etapa"></div>
+    <div class="progresso">
+        <div class="etapa ativa"></div>
+        <div class="etapa ativa"></div>
+        <div class="etapa"></div>
+        <div class="etapa"></div>
+        <div class="etapa"></div>
+    </div>
+
+   <div class="servicos">
+
+    <div
+        class="servico"
+        data-nome="Corte"
+        data-preco="45"
+        onclick="selecionarServico(this)"
+    >
+
+        <div class="foto">
+            <img src="service-corte.jpg" alt="Corte">
         </div>
 
-    </section>
+        <div class="servico-info">
+            <h3>Corte</h3>
+            <span>R$45,00</span>
+        </div>
+
+        <img
+            class="circle"
+            src="circle.svg"
+            alt="Selecionar"
+        >
+
+    </div>
+
+    <div class="linha"></div>
+
+
+    <div
+        class="servico"
+        data-nome="Corte + barba"
+        data-preco="60"
+        onclick="selecionarServico(this)"
+    >
+
+        <div class="foto">
+            <img src="service-combo.jpg" alt="Corte e barba">
+        </div>
+
+        <div class="servico-info">
+            <h3>Corte + barba</h3>
+            <span>R$60,00</span>
+        </div>
+
+        <img
+            class="circle"
+            src="circle.svg"
+            alt="Selecionar"
+        >
+
+    </div>
+
+    <div class="linha"></div>
+
+
+    <div
+        class="servico"
+        data-nome="Acabamento"
+        data-preco="15"
+        onclick="selecionarServico(this)"
+    >
+
+        <div class="foto">
+            <img src="service-barba.jpg" alt="Acabamento">
+        </div>
+
+        <div class="servico-info">
+            <h3>Acabamento</h3>
+            <span>R$15,00</span>
+        </div>
+
+        <img
+            class="circle"
+            src="circle.svg"
+            alt="Selecionar"
+        >
+
+    </div>
+
+</div>
+
+<div class="area-proximo">
+
+    <button
+        id="btn-proximo"
+        type="button"
+        onclick="irParaData()"
+    >
+        Próximo
+    </button>
+
+</div>
+</section>
 
       <!-- TELA DATA -->
-    <section id="tela-data" class="tela">
+   <section id="tela-data" class="tela">
 
-        <div class="header">
+    <div class="header">
 
-            <button
-                class="btn-voltar"
-                type="button"
-                onclick="mostrarTela('tela-servicos')"
+        <button
+            class="btn-voltar"
+            type="button"
+            onclick="mostrarTela('tela-servicos')"
+        >
+            <img src="arrow-left.svg" alt="Voltar">
+        </button>
+
+        <div class="header-info">
+            <h2>Selecione a data</h2>
+            <span>Passo 3 de 5</span>
+        </div>
+
+    </div>
+
+    <div class="progresso">
+        <div class="etapa ativa"></div>
+        <div class="etapa ativa"></div>
+        <div class="etapa ativa"></div>
+        <div class="etapa"></div>
+        <div class="etapa"></div>
+    </div>
+
+   <div class="calendario">
+
+    <div class="calendario-header">
+
+        <button
+            type="button"
+            class="mes-btn"
+            onclick="mudarMes(-1)"
+        >
+            ‹
+        </button>
+
+        <h3 id="titulo-mes"></h3>
+
+        <button
+            type="button"
+            class="mes-btn"
+            onclick="mudarMes(1)"
+        >
+            ›
+        </button>
+
+    </div>
+
+    <div class="dias-semana">
+        <span>DOM</span>
+        <span>SEG</span>
+        <span>TER</span>
+        <span>QUA</span>
+        <span>QUI</span>
+        <span>SEX</span>
+        <span>SÁB</span>
+    </div>
+
+    <div class="dias" id="dias-calendario"></div>
+
+</div>
+
+    
+    <div class="area-proximo">
+    <button
+    id="btn-proximo-data"
+    type="button"
+    onclick="irParaHorarios()"
+>
+    Próximo
+</button>
+</div>
+
+</section>
+
+      <!-- TELA HORA -->
+    <section id="tela-data-hora" class="tela">
+
+    <div class="header">
+
+        <button
+            class="btn-voltar"
+            type="button"
+            onclick="mostrarTela('tela-data')"
+        >
+            <img src="arrow-left.svg" alt="Voltar">
+        </button>
+
+        <div class="header-info">
+            <h2>Selecione o horário</h2>
+            <span>Passo 4 de 5</span>
+        </div>
+
+    </div>
+
+    <div class="progresso">
+        <div class="etapa ativa"></div>
+        <div class="etapa ativa"></div>
+        <div class="etapa ativa"></div>
+        <div class="etapa ativa"></div>
+        <div class="etapa"></div>
+    </div>
+
+    <div
+        class="horarios-disponiveis"
+        id="horarios-disponiveis"
+    ></div>
+
+    <div class="area-proximo">
+
+        <button
+            id="btn-proximo-horario"
+            type="button"
+            onclick="irParaConfirmacao()"
+        >
+            Próximo
+        </button>
+
+    </div>
+
+</section>
+
+      <!-- TELA CONFIRAMACAO -->
+  <section id="tela-confirmacao" class="tela">
+
+    <div class="header">
+
+        <button
+            class="btn-voltar"
+            type="button"
+            onclick="mostrarTela('tela-data-hora')"
+        >
+            <img src="arrow-left.svg" alt="Voltar">
+        </button>
+
+        <div class="header-info">
+            <h2>Confirmação</h2>
+            <span>Passo 5 de 5</span>
+        </div>
+
+    </div>
+
+
+    <div class="progresso">
+
+        <div class="etapa ativa"></div>
+        <div class="etapa ativa"></div>
+        <div class="etapa ativa"></div>
+        <div class="etapa ativa"></div>
+        <div class="etapa ativa"></div>
+
+    </div>
+
+
+    <div class="confirmacao-conteudo">
+
+
+        <!-- MEUS DADOS -->
+
+        <h3>Meus dados</h3>
+
+        <div class="card-dados">
+
+            <label for="nome">
+                Nome completo *
+            </label>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Seu nome completo"
             >
-                <img src="assets/arrow-left.svg" alt="Voltar">
-            </button>
 
-            <div class="header-info">
-                <h2>Selecione o serviço</h2>
-                <span>Passo 3 de 5</span>
+
+            <label for="telefone">
+                WhatsApp *
+            </label>
+
+            <div class="telefone-campo">
+
+                <div class="ddd-pais">
+                    +55
+                </div>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    placeholder="(51) 99999-9999"
+                >
+
             </div>
 
         </div>
 
 
-        <div class="progresso">
-            <div class="etapa ativa"></div>
-            <div class="etapa ativa"></div>
-            <div class="etapa ativa"></div>
-            <div class="etapa"></div>
-            <div class="etapa"></div>
+        <!-- RESUMO -->
+
+        <h3>Revise seu agendamento</h3>
+
+        <div class="card-resumo">
+
+            <div class="resumo-bloco">
+
+                <span class="resumo-label">
+                    Profissional
+                </span>
+
+                <strong id="resumo-barbeiro">
+                </strong>
+
+            </div>
+
+
+            <div class="linha-resumo"></div>
+
+
+            <div class="resumo-bloco">
+
+                <span class="resumo-label">
+                    Data e hora
+                </span>
+
+                <strong id="resumo-data">
+                </strong>
+
+            </div>
+
+
+            <div class="linha-resumo"></div>
+
+
+            <div class="resumo-bloco">
+
+                <span class="resumo-label">
+                    Serviços
+                </span>
+
+                <div id="resumo-servicos"></div>
+
+            </div>
+
+
+            <div class="linha-resumo"></div>
+
+
+            <div class="resumo-total">
+
+                <strong>Total</strong>
+
+                <strong id="resumo-total">
+                    R$0,00
+                </strong>
+
+            </div>
+
         </div>
 
-    </section>
+
+        <!-- OBSERVAÇÃO -->
+
+        <h3>Observação</h3>
+
+        <textarea
+            id="observacao"
+            placeholder="Se necessário, adicione alguma observação"
+        ></textarea>
+
+
+        <!-- AGENDAR -->
+
+        <button
+            type="button"
+            class="btn-agendar"
+            onclick="finalizarAgendamento()"
+        >
+            Confirmar agendamento
+        </button>
+
+    </div>
+
+</section>
 
 </main>
 

@@ -1,4 +1,6 @@
-/* RESET */
+/*/////////////////////////////*/
+/* CORPO DO SITE */
+
 
 * {
     margin: 0;
@@ -33,6 +35,8 @@ body {
     margin: 0 auto;
 }
 
+/*/////////////////////////////*/
+/* PÁGINA INICIAL */
 
 /* HERO */
 
@@ -266,6 +270,10 @@ body {
     font-weight: 300;
 }
 
+/*/////////////////////////////*/
+
+/* TELA BARBEIROS*/
+
 .tela-barbeiros {
     width: 100%;
     min-height: 100vh;
@@ -396,8 +404,498 @@ body {
     margin-bottom: 16px;
 }
 
+/*/////////////////////////////*/
+/* TELA SERVICOS */
 
 .tela-servicos {
     width: 100%;
     min-height: 100vh;
+}
+
+.servicos {
+    width: 332px;
+    margin: 30px auto 0;
+}
+
+.servico {
+    width: 100%;
+    min-height: 64px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    cursor: pointer;
+}
+
+.servico-info {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.servico-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.servico-info span {
+    font-size: 12px;
+    font-weight: 300;
+    color: #87827D;
+}
+
+.foto {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background-color: #87827D;
+    flex-shrink: 0;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #87827D;
+
+    margin: 16px 0;
+}
+
+.area-proximo {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 332px;
+}   
+
+#btn-proximo {
+    width: 100%;
+    height: 48px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #FFFFFF;
+    color: #100C0A;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+/*//////////////////////////////////*/
+
+/*TELA DATA*/
+
+
+.calendario {
+    width: 332px;
+    margin: 30px auto 0;
+
+    padding: 20px;
+
+    border: 1px solid #87827D;
+    border-radius: 12px;
+
+    background-color: #1E1E1E;
+}
+
+.calendario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 24px;
+}
+
+.calendario-header h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mes-btn {
+    width: 32px;
+    height: 32px;
+
+    background: transparent;
+    color: #FFFFFF;
+
+    border: none;
+
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    margin-bottom: 12px;
+}
+
+.dias-semana span {
+    text-align: center;
+
+    font-size: 9px;
+    font-weight: 400;
+
+    color: #87827D;
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 6px;
+}
+
+.dia {
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 50%;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+.dia:hover {
+    background-color: #2E2A27;
+}
+
+.dia.selecionado {
+    background-color: #E8B33E;
+    color: #100C0A;
+    font-weight: 700;
+}
+
+.dia.desativado {
+    color: #54504D;
+    cursor: default;
+}
+
+#btn-proximo-data {
+    width: 100%;
+    height: 48px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #FFFFFF;
+    color: #100C0A;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+/*/////////////////*/
+/*TELA HORA*/
+
+.horarios-disponiveis {
+    width: 332px;
+    margin: 30px auto 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.horario-btn {
+    width: 100%;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: transparent;
+    color: #FFFFFF;
+
+    border: none;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/* linha entre os horários */
+
+.horario-btn:not(:last-child) {
+    border-bottom: 1px solid #87827D;
+}
+
+/* círculo */
+
+.horario-circle {
+    width: 20px;
+    height: 20px;
+
+    flex-shrink: 0;
+}
+
+
+#btn-proximo-horario {
+    width: 100%;
+    height: 48px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #FFFFFF;
+    color: #100C0A;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+/*//////////////////////////////////*/
+/* TELA CONFIRMAÇÃO */
+
+.confirmacao-conteudo {
+    width: 332px;
+    margin: 24px auto 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.confirmacao-conteudo > h3 {
+    font-size: 14px;
+    font-weight: 700;
+
+    margin-top: 8px;
+}
+
+
+/* CARD DADOS */
+
+.card-dados {
+    width: 100%;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+
+    border-radius: 12px;
+    border: 1px solid 87827D;
+
+    color: #FFFFFF;
+}
+
+.card-dados label {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.card-dados input {
+    width: 100%;
+    height: 40px;
+
+    padding: 0 12px;
+
+    border: 1px solid #87827D;
+    border-radius: 8px;
+
+    background-color: transparent;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+
+    outline: none;
+}
+
+.card-dados input:focus {
+    border-color: #E8B33E;
+}
+
+
+/* TELEFONE */
+
+.telefone-campo {
+    width: 100%;
+
+    display: flex;
+    gap: 8px;
+}
+
+.ddd-pais {
+    width: 52px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #87827D;
+    border-radius: 8px;
+
+    font-size: 12px;
+}
+
+.telefone-campo input {
+    flex: 1;
+}
+
+
+/* RESUMO */
+
+.card-resumo {
+    width: 100%;
+
+    padding: 16px;
+
+    border-radius: 12px;
+
+    color: #FFFFFF;
+}
+
+.resumo-bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.resumo-label {
+    font-size: 10px;
+    color: #54504D;
+}
+
+.resumo-bloco strong {
+    font-size: 12px;
+}
+
+.linha-resumo {
+    width: 100%;
+    height: 1px;
+
+    margin: 10px 0;
+
+    background-color: #87827D;
+}
+
+
+/* SERVIÇOS RESUMO */
+
+.resumo-servico {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+
+    margin-top: 4px;
+}
+
+
+/* TOTAL */
+
+.resumo-total {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 14px;
+
+    margin-top: 4px;
+}
+
+
+/* OBSERVAÇÃO */
+
+#observacao {
+    width: 100%;
+    height: 90px;
+
+    padding: 14px;
+
+    resize: none;
+
+    border: 1px solid #87827D;
+    border-radius: 12px;
+
+    background-color: #100C0A;
+    color: #FFFFFF;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+
+    outline: none;
+}
+
+
+/* BOTÃO FINAL */
+
+.btn-agendar {
+    width: 100%;
+    height: 48px;
+
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #100C0A;
+    background-color: #FFFFFF;
+
+    border: none;
+    border-radius: 50px;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
 }
